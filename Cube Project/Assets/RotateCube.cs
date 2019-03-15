@@ -4,17 +4,32 @@ using UnityEngine;
 public class RotateCube : MonoBehaviour
 {
     public Transform Cube;
-    public Vector3 turn;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("a") && Input.GetKeyUp("a"))
+        if (Input.GetKeyDown("a"))
         {
             Debug.Log("here");
-            
-            Cube.transform.Rotate(0, 90 * Time.deltaTime, 0);
+
+            Cube.transform.Rotate(0, 90 * Time.deltaTime * 15, 0);
         }
-        //Cube.transform.Rotate(0, 90 * Time.deltaTime, 0);
+        if (Input.GetKeyDown("d"))
+        {
+            Debug.Log("here");
+
+            Cube.transform.Rotate(0, -90 * Time.deltaTime * 15, 0);
+        }
+        if (Input.GetKeyDown("w"))
+        {
+
+            Cube.transform.Rotate(-90 * Time.deltaTime * 15, 0, 0);
+        }
+        if (Input.GetKeyDown("s"))
+        {
+            Debug.Log("here");
+
+            Cube.transform.Rotate(90 * Time.deltaTime * 15, 0, 0);
+        }
     }
 }

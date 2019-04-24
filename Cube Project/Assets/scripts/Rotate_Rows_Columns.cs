@@ -125,6 +125,13 @@ public class Rotate_Rows_Columns : MonoBehaviour
                     c[5] = v.c0;
                     c[1] = v.c1;
                     break;
+                case CLayer.U:
+                    c[8] = v.center;
+                    c[0] = v.c1;
+                    c[4] = v.c0;
+                    c[5] = v.c3;
+                    c[1] = v.c2;
+                    break;
 
             }
         }
@@ -150,6 +157,10 @@ public class Rotate_Rows_Columns : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             RotateLayer(CLayer.F, !clockwise);
+        }
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            RotateLayer(CLayer.U, !clockwise);
         }
     }
 

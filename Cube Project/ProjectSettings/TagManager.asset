@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Slice
+  - BackFace
+  - FrontFace
+  - InnerPoint
+  - LeftFace
+  - RightFace
+  - BottomFace
+  - TopFace
+  - Camera1
+  - Camera2
   layers:
   - Default
   - TransparentFX
@@ -14,7 +24,7 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
+  - Background Img
   - 
   - 
   - 

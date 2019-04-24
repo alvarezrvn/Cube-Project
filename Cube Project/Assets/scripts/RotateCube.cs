@@ -47,5 +47,13 @@ public class RotateCube : MonoBehaviour
         {
             Cube.transform.Rotate(22.5f, 0, 0);
         }
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            Cube.transform.Rotate(0, 0, 22.5f);
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            Cube.transform.Rotate(0, 0, -22.5f);
+        }
     }
 }
